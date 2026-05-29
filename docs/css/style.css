@@ -1,0 +1,66 @@
+:root {
+    --bg-color: #121212;
+    --text-color: #E0E0E0;
+    --accent-color: #4CAF50;
+    --font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Rainbow Theme Overrides */
+body.rainbow-theme {
+    --bg-color: linear-gradient(135deg, #FF5E5E, #FF9D5E, #FFDB5E, #5EFF9D, #5EFFFF, #5E9DFF, #9D5EFF);
+    --text-color: #000000;
+    --accent-color: #FFFFFF;
+}
+
+/* Theme Toggle */
+#theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    border: none;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+/* Language Toggles */
+#language-toggles {
+    position: absolute;
+    top: 10px;
+    right: 150px;
+    display: flex;
+    gap: 10px;
+}
+
+.flag {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Library Section */
+#library {
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid var(--accent-color);
+}
+
+.book-item {
+    margin-bottom: 20px;
+}
+
+.book-title {
+    font-weight: bold;
+    color: var(--accent-color);
+}
